@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'Bariol';
+  src: url(../font/Bariol_Regular.otf);
+}
+@font-face {
+  font-family: 'RictyDiminished';
+  src: url(../font/RictyDiminished-Regular.ttf);
+}
+
+html,body{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Bariol","RictyDiminished";
+}
+
+body{
+  background: #d6dce5;
+}
+
+/* ------------------------------------------------ */
+
+.top{
+  position: relative;
+  width: 100%;
+  height: 80px;
+  display: table;
+  background: #44546a;
+  border: none;
+}
+.top span.title{
+  display: table-cell;
+  vertical-align: middle;
+  padding: 10px;
+  color: #ffffff;
+}
+.top span.pushSwitch{
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  width: 10%;
+  padding: 10px;
+  background-color: #8faadc;
+  color: #ffffff;
+}
+.top span.pushSwitch.on{
+  color: #ffff00;
+}
+
+.slot{
+  position: relative;
+  width: 100%; height: auto;
+  display: table;
+  background: #ffffff;
+  border-bottom: solid thin #8faadc;
+}
+.slot span.text{
+  display: table-cell;
+  vertical-align: middle;
+  width: 90%;
+  padding: 10px;
+  color: #000000;
+}
+.slot span.number{
+  display: table-cell;
+  text-align: right;
+  vertical-align: bottom;
+  width: 10%;
+  padding: 10px;
+  color: #8faadc;
+}
+
+/* ------------------------------------------------ */
+
+.editMode{
+  visibility: hidden;
+}
+.editMode.on{
+  visibility: visible;
+}
+
+.cover{
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #000000;
+  opacity: 0.5;
+}
+
+.editWindow{
+  position: absolute;
+  top: 90px; left: 50%;
+  transform: translateX(-50%);
+  width: 80%; height: auto;
+  background: #ffffff;
+}
+.editWindow h2.title{
+  padding: 0 10px;
+}
+.editWindow textarea.textarea{
+  position: relative;
+  top: 0px; left: 50%;
+  margin: 10px 0;
+  transform: translateX(-50%);
+  width: 90%;
+}
+.editWindow p.options{
+  text-align: right;
+}
+.editWindow p.options span{
+  padding: 0 10px;
+}
+.editWindow p.options span.clear{
+}
+.editWindow p.options span.save{
+}
